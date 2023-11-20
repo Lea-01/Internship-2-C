@@ -4,6 +4,10 @@ using System.Security.Cryptography.X509Certificates;
 using System.Xml.Linq;
 
 Proizvod nekiProizvod = new Proizvod("Limun", new DateTime(2023,12,24), 43.0);
+Racun someBill = new Racun();
+someBill.dodajProizvod(nekiProizvod, 2);
+someBill.zakljucajRacun();
+Radnik ivan = new Radnik ("Ivan Sumić", new DateTime(1970, 05,04));
 while (true)
 {
     Console.WriteLine("1 - Artikli\n2 - Radnici\n3 - Racuni\n0 - Izlaz iz aplikacije");
